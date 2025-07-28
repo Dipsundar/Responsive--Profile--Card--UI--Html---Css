@@ -1,0 +1,188 @@
+/* Google Fonts Import  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* resets css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* body design */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+/* Profile card design  */
+.profile-card {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 25px;
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 24px 24px 0 0;
+  height: 36%;
+  width: 100%;
+  background-color: #4070f4;
+}
+
+/* image design  */
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #4070f4;
+  margin-bottom: 10px;
+}
+
+/* profile image design */
+.image .profile-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* text data  */
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+/* name  */
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* job  */
+.text-data .job {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* media buttons  */
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* links  */
+.media-buttons .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  margin: 0 8px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background-color: #4070f4;
+  text-decoration: none;
+}
+
+/* links bg color  */
+.media-buttons .link-1 {
+  background-color: #4267b2;
+}
+.media-buttons .link-2 {
+  background-color: #1da1f2;
+}
+.media-buttons .link-3 {
+  background-color: #e13063;
+}
+.media-buttons .link-4 {
+  background-color: #ff0000;
+}
+.media-buttons .link-5 {
+  background-color: #25d366;
+}
+/* links hover effect  */
+.media-buttons .link:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+/* button design */
+.profile-card .button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4070f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* buttons  */
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+/* button  */
+.buttons .btn {
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  padding: 8px 24px;
+  background-color: #4070f4;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+/* buttons hover effect  */
+.buttons .btn:hover {
+  background-color: #365bbf;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-card .analyticc {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.analyticc .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+.data:last-child {
+  border-right: none;
+}
